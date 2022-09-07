@@ -19,10 +19,7 @@ if(isset($_POST['submit']))
     $result = mysqli_query($conexao, "INSERT INTO manipuladores(loginP,senha,nome,cpf,email,telefone,funcao,data_nascimento,cidade,estado,endereco) 
     VALUES ('$loginP','$senha','$nome','$cpf','$email','$telefone','$funcao','$data_nascimento','$cidade','$estado','$endereco')");
 
-  function(){
-
-    window.location.href = "Formulario.html"
-
+    header('Location: Tela de login.html');
   }
       // print_r($_POST['loginP']);
       // print_r('<br>');
@@ -47,7 +44,7 @@ if(isset($_POST['submit']))
       // print_r($_POST['endereco']);
 
 
-}
+
 
     
 ?>
