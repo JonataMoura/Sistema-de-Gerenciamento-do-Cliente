@@ -7,12 +7,12 @@
 
     $conexao = new mysqli($dbHost,$dbUsername,$dbPassword,$dbName);
 
-    if($conexao)
-    {
-        echo "Conexão efetuada com sucesso";
-    }
-    else
-    {
-        echo "Erro";
-    }
+   // if($conexao)
+   // {
+   //     echo "Conexão efetuada com sucesso";
+   // }
+   // else
+   // {
+   //     echo "Erro";
+   // }
 ?>
