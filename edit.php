@@ -35,7 +35,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário | GN</title>
+    <title>Formulário Cliente</title>
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
@@ -112,14 +112,16 @@
 </head>
 <body>
     <a href="sistema.php">Voltar</a>
+    
     <div class="box">
         <form action="saveEdit.php" method="POST">
             <fieldset>
                 <legend><b>Editar Cliente</b></legend>
                 <br>
                 <div class="inputBox">
-                    <input type="text" name="nome" id="nome" class="inputUser" value=<?php echo $nome;?> required>
+                    <input type="text" name="nome" id="nome" class="inputUser" value="<?php echo $nome;?>" required>
                     <label for="nome" class="labelInput">Nome completo</label>
+                   
                 </div>
                 <br><br>
                 <div class="inputBox">
@@ -136,17 +138,17 @@
                 <input type="date" name="data_nascimento" id="data_nascimento" value=<?php echo $data_nasc;?> required>
                 <br><br><br>
                 <div class="inputBox">
-                    <input type="text" name="cidade" id="cidade" class="inputUser" value=<?php echo $cidade;?> required>
+                    <input type="text" name="cidade" id="cidade" class="inputUser" value="<?php echo $cidade;?>" required>
                     <label for="cidade" class="labelInput">Cidade</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="text" name="estado" id="estado" class="inputUser" value=<?php echo $estado;?> required>
+                    <input type="text" name="estado" id="estado" class="inputUser" value="<?php echo $estado;?>" required>
                     <label for="estado" class="labelInput">Estado</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="text" name="endereco" id="endereco" class="inputUser" value=<?php echo $endereco;?> required>
+                    <input type="text" name="endereco" id="endereco" class="inputUser" value="<?php echo $endereco;?>" required>
                     <label for="endereco" class="labelInput">Endereço</label>
                 </div>
                 <br><br>

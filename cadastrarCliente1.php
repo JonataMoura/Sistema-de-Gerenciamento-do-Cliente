@@ -18,7 +18,7 @@ if(isset($_POST['submit']))
     $result = mysqli_query($conexao, "INSERT INTO clientes(nome,cpf,email,telefone,data_nasc,cidade,estado,endereco) 
     VALUES ('$nome','$cpf','$email','$telefone','$data_nasc','$cidade','$estado','$endereco')");
 
-    header('Location: cadastrarCliente.html');
+    header('Location: cadastrarCliente.php');
   }
       
       // print_r($_POST['nome']);
