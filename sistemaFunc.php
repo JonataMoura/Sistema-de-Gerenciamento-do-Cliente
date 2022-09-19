@@ -62,7 +62,6 @@
         <div class="d-flex">
             <a href="sair.php" class="btn btn-danger me-5">Sair</a>
             <a href="cadastrarCliente.php" class = " btn btn-success me-5">Cadastrar Cliente</a>
-            <a href="Formulario.php" class = " btn btn-secondary me-5">Cadastrar Funcionario</a>
         </div>
     </nav>
     <br>
@@ -79,7 +78,6 @@
         </button>
     </div>
     <div class="m-5">
-    <h1>Tabela de Clientes</h1>
         <table class="table text-white table-bg">
             <thead>
                 <tr>
