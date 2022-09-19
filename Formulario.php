@@ -20,7 +20,7 @@
     <link href="EstiloFormulario.css" rel="stylesheet">
 </head>
 <body>
-    <a href="home.html">Voltar</a>
+    <a href="sistema.php">Voltar</a>
     <div class="box">
         <form action="formularioPF.php" method="POST">
             <fieldset>
