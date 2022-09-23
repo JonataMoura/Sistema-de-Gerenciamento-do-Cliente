@@ -16,17 +16,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery.mask.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <title>Formulário do Jônata</title>
     <link href="EstiloFormulario.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-        <script type="text/javascript">
-            $(document).ready(){
-                $('#cpf').mask("000.000.000-00");
-                $('#email').mask("exemplo@aaa.com");
-                $('#telefone').mask("(00)00000-0000");
-                $('#data_nasc').mask("00/00/0000");
-            })
+        
+        <script>
+            
+        $("#cpf").mask("000.000.000-00");
+        $("#telefone").mask("(00)00000-0000");
+        
+            
     </script>
 </head>
 <body>

@@ -21,7 +21,7 @@
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script type="text/javascript">
-            $(document).ready(){
+            $(document).ready(function(){
                 $('#cpf').mask("000.000.000-00");
                 $('#email').mask("exemplo@aaa.com");
                 $('#telefone').mask("(00)00000-0000");

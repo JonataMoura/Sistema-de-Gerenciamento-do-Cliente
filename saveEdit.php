@@ -7,7 +7,7 @@
         $nome = $_POST['nome'];
         $email = $_POST['email'];
         $telefone = $_POST['telefone'];
-        $data_nasc = $_POST['data_nascimento'];
+        $data_nasc = $_POST['data_nasc'];
         $cidade = $_POST['cidade'];
         $estado = $_POST['estado'];
         $endereco = $_POST['endereco'];

@@ -135,7 +135,7 @@
                 </div>
                 <br>
                 <label for="data_nascimento"><b>Data de Nascimento:</b></label>
-                <input type="date" name="data_nascimento" id="data_nascimento" value=<?php echo $data_nasc;?> required>
+                <input type="date" name="data_nasc" id="data_nasc" value=<?php echo $data_nasc;?> required>
                 <br><br><br>
                 <div class="inputBox">
                     <input type="text" name="cidade" id="cidade" class="inputUser" value="<?php echo $cidade;?>" required>

@@ -9,10 +9,10 @@
 
    // if($conexao)
    // {
-   //     echo "Conexão efetuada com sucesso";
-   // }
+  //      echo "Conexão efetuada com sucesso";
+  //  }
    // else
-   // {
+  //  {
    //     echo "Erro";
    // }
 ?>
