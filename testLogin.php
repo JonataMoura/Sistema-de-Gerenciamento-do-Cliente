@@ -4,14 +4,16 @@ session_start();
 if (isset($_POST['submit']) && !empty($_POST['loginP']) && !empty($_POST['senha'])) {
     // Acessa
     include_once('config.php');
-    $loginP = $_POST['loginP'];
-    $senha = $_POST['senha'];
+    $loginP = addslashes($_POST['loginP']);
+    $senha = addslashes($_POST['senha']);
 
     // print_r('Login: ' . $loginP);
     // print_r('<br>');
     // print_r('Senha: ' . $senha);
 
     $sql = "SELECT * FROM manipuladores WHERE loginP = '$loginP' and senha = '$senha' and funcao = 'proprietario'";
+    //$pdo->prepare(
+    //$sql->execute(array($loginP,$senha));
 
     $result = $conexao->query($sql);
 
