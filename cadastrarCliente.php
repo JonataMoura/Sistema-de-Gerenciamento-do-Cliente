@@ -16,18 +16,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/jquery.mask.js"></script>
-    <script src="js/jquery.mask.min.js"></script>
+    
     <title>Formulário do Jônata</title>
     <link href="EstiloFormulario.css" rel="stylesheet">
         
-        <script>
-            
-        $("#cpf").mask("000.000.000-00");
-        $("#telefone").mask("(00)00000-0000");
         
-            
-    </script>
 </head>
 <body>
     <a href="sistema.php">Voltar</a>

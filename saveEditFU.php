@@ -19,7 +19,7 @@
         SET loginP='$loginP',senha='$senha',nome='$nome',email='$email',telefone='$telefone',funcao='$funcao',data_nascimento='$data_nascimento',cidade='$cidade',estado='$estado',endereco='$endereco'
         WHERE cpf=$cpf";
         $result = $conexao->query($sqlInsert);
-        print_r($result);
+        //print_r($result);
     }
     header('Location: sistema.php');
 

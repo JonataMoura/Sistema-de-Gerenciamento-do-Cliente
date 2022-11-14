@@ -15,11 +15,11 @@
 
         if($result->num_rows > 0)
         {
-            $sqlDelete = "DELETE FROM manipuladores WHERE cpf=$cpf";
+            $sqlDelete = "DELETE FROM manipuladores WHERE cpf='$cpf'";
             $resultDelete = $conexao->query($sqlDelete);
         }
         
     }
-    //header('Location: sistema.php');
+    header('Location: sistema.php');
     
 ?>

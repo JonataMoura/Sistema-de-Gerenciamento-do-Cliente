@@ -5,15 +5,15 @@ if(isset($_POST['submit']))
    include_once('config.php');
    
     
-    $nome = $_POST['nome'];
-    $cpf = $_POST['cpf'];
-    $email = $_POST['email'];
-    $telefone = $_POST['telefone'];
+    $nome = htmlentities($_POST['nome']);
+    $cpf = htmlentities($_POST['cpf']);
+    $email = htmlentities($_POST['email']);
+    $telefone = htmlentities($_POST['telefone']);
     
-    $data_nasc = $_POST['data_nasc'];
-    $cidade = $_POST['cidade'];
-    $estado = $_POST['estado'];
-    $endereco = $_POST['endereco'];
+    $data_nasc = htmlentities($_POST['data_nasc']);
+    $cidade = htmlentities($_POST['cidade']);
+    $estado = htmlentities($_POST['estado']);
+    $endereco = htmlentities($_POST['endereco']);
    
     $result = mysqli_query($conexao, "INSERT INTO clientes(nome,cpf,email,telefone,data_nasc,cidade,estado,endereco) 
     VALUES ('$nome','$cpf','$email','$telefone','$data_nasc','$cidade','$estado','$endereco')");

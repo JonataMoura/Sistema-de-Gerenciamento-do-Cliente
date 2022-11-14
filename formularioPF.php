@@ -4,17 +4,17 @@ if(isset($_POST['submit']))
 {
    include_once('config.php');
    
-    $loginP = $_POST['loginP'];
-    $senha = $_POST['senha'];
-    $nome = $_POST['nome'];
-    $cpf = $_POST['cpf'];
-    $email = $_POST['email'];
-    $telefone = $_POST['telefone'];
-    $funcao = $_POST['funcao'];
-    $data_nascimento = $_POST['data_nascimento'];
-    $cidade = $_POST['cidade'];
-    $estado = $_POST['estado'];
-    $endereco = $_POST['endereco'];
+    $loginP = htmlentities($_POST['loginP']);
+    $senha = htmlentities($_POST['senha']);
+    $nome = htmlentities($_POST['nome']);
+    $cpf = htmlentities($_POST['cpf']);
+    $email = htmlentities($_POST['email']);
+    $telefone = htmlentities($_POST['telefone']);
+    $funcao = htmlentities($_POST['funcao']);
+    $data_nascimento = htmlentities($_POST['data_nascimento']);
+    $cidade = htmlentities($_POST['cidade']);
+    $estado = htmlentities($_POST['estado']);
+    $endereco = htmlentities($_POST['endereco']);
    
     $result = mysqli_query($conexao, "INSERT INTO manipuladores(loginP,senha,nome,cpf,email,telefone,funcao,data_nascimento,cidade,estado,endereco) 
     VALUES ('$loginP','$senha','$nome','$cpf','$email','$telefone','$funcao','$data_nascimento','$cidade','$estado','$endereco')");
