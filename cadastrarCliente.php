@@ -8,6 +8,10 @@
          unset($_SESSION['senha']);
          header('Location: Tela de Login.html');
      }
+
+     $msg="";
+     if (isset($_GET['msg']))
+        $msg =  "cliente cadastrado com sucesso!";
 ?>
 
 <!DOCTYPE html>
@@ -24,7 +28,8 @@
 </head>
 <body>
     <a href="sistema.php">Voltar</a>
-    <div class="box">
+    <div class="box">    
+    <div id="mensagem"><?php echo $msg?></div>
         <form action="cadastrarCliente1.php" method="POST">
             <fieldset>
                 <legend><b>Fórmulário de Clientes</b></legend>

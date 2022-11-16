@@ -8,6 +8,10 @@
          unset($_SESSION['senha']);
          header('Location: Tela de Login.html');
      }
+
+     $msg="";
+     if (isset($_GET['msg']))
+        $msg =  "cliente cadastrado com sucesso!";
 ?>
 
 <!DOCTYPE html>
@@ -20,17 +24,12 @@
     <title>Formulário do Jônata</title>
     <link href="EstiloFormulario.css" rel="stylesheet">
         
-        <script>
-            
-        $("#cpf").mask("000.000.000-00");
-        $("#telefone").mask("(00)00000-0000");
         
-            
-    </script>
 </head>
 <body>
     <a href="sistemaFunc.php">Voltar</a>
     <div class="box">
+        <div id="mensagem"><?php echo $msg?></div>
         <form action="cadastrarClientePF1.php" method="POST">
             <fieldset>
                 <legend><b>Fórmulário de Clientes</b></legend>

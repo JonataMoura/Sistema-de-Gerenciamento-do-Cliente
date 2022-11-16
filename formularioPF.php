@@ -19,7 +19,7 @@ if(isset($_POST['submit']))
     $result = mysqli_query($conexao, "INSERT INTO manipuladores(loginP,senha,nome,cpf,email,telefone,funcao,data_nascimento,cidade,estado,endereco) 
     VALUES ('$loginP','$senha','$nome','$cpf','$email','$telefone','$funcao','$data_nascimento','$cidade','$estado','$endereco')");
 
-    header('Location: Formulario.php');
+    header('Location: Formulario.php?msg=ok');
   }
       // print_r($_POST['loginP']);
       // print_r('<br>');

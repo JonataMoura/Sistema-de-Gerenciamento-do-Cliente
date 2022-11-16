@@ -8,6 +8,9 @@
          unset($_SESSION['senha']);
          header('Location: Tela de Login.html');
      }
+     $msg="";
+     if (isset($_GET['msg']))
+        $msg =  "cadastrado com sucesso!";
 ?>
 
 <!DOCTYPE html>
@@ -23,6 +26,7 @@
 <body>
     <a href="sistema.php">Voltar</a>
     <div class="box">
+    <div id="mensagem"><?php echo $msg?></div>
         <form action="formularioPF.php" method="POST">
             <fieldset>
                 <legend><b>Fórmulário de Cadastro da Empresa</b></legend>
